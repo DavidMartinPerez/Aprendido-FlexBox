@@ -1,0 +1,33 @@
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+html, body{
+    width: 100vh;
+    height: 100vh;
+}
+body{
+    background-color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    border: 10px solid white;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+}
+div[class*="item-"] {
+    background: coral;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid darkcyan;
+    flex: 1;
+}
+div[class*="item-"]:nth-child(odd) {
+    background: lemonchiffon;
+    color: black;
+}

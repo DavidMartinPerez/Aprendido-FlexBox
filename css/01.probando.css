@@ -1,0 +1,43 @@
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+html, body{
+    width: 100vh;
+    height: 100vh;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    flex-basis: 100%;
+}
+
+.contenedor{
+    display: flex;
+    width: 500px;
+    min-height: 200px;
+    background-color: lightcoral;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.contenido{
+    background-color:white;
+    width: 70%;
+    min-height: 500px;
+    border: 1px solid gray;
+    flex-grow: 1;
+}
+.lateral{
+    background-color: darkgray;
+    width: 25%;
+    min-height: 500px;
+    flex-grow: 0.5;
+    margin-left: 5%;
+}
