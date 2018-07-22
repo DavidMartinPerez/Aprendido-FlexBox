@@ -3,3 +3,7 @@
 ## Inicializar:
 
 * display: flex;
+
+## Colapsar capas
+
+* flex-wrap
